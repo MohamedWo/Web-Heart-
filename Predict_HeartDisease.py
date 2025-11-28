@@ -75,7 +75,7 @@ import os
 
 # ====== تحميل النموذج بأمان ======
 BASE_DIR = os.path.dirname(__file__)  # مسار الملف الحالي
-MODEL_PATH = os.path.join(BASE_DIR, "Car_Predict.sav")
+MODEL_PATH = os.path.join(BASE_DIR, "Diabetes_prediction.sav")
 
 try:
     with open(MODEL_PATH, "rb") as f:
@@ -133,5 +133,6 @@ else:
         else:
             st.error('The Patient Has Disease')
             st.image('https://brghealth.com/brg/wp-content/uploads/2020/01/diabetes.png', width=200)
+
 
 
