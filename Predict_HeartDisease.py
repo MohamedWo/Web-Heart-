@@ -4,6 +4,10 @@
 import pickle
 import streamlit as st
 import pandas as pd
+import pickle
+
+with open("Car_Predict.sav", "rb") as f:
+    data = pickle.load(f)
 
 data = pickle.load(open(r'C:\Users\jddkd\OneDrive\Desktop\Project_AI\Diabetes_prediction.sav', 'rb'))
 
@@ -63,3 +67,4 @@ else:
         else:
             st.sidebar.write('The Patient Has Disease')
             st.sidebar.image('https://brghealth.com/brg/wp-content/uploads/2020/01/diabetes.png', width=150)
+
